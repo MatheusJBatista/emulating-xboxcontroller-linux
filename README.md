@@ -50,6 +50,7 @@ BTN_SELECT=tl
 BTN_START=tr
 see this image as reference:
 ![https://steamcommunity.com/app/236090/discussions/0/558748653724279774/](https://lh4.googleusercontent.com/-IYeHo2Xb820/UwaPEr2W-7I/AAAAAAAAGpw/ysXgr-l2o_Q/w462-h383-no/xbox.jpg)
+
 and create script replacing your map like this:
 xboxdrv \
 --evdev /dev/input/event1 \
