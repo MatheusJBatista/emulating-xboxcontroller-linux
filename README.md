@@ -8,7 +8,7 @@ Download:
 sudo apt-get install joystick
 sudo apt-get install jstest-gtk
 
-[Image]
+![jtest1](https://raw.githubusercontent.com/MatheusJBatista/emulating-xboxcontroller-linux/master/imgs/jtest1.png)
 
 ## Xboxdrv
 sudo apt-get install xboxdrv
@@ -16,15 +16,15 @@ sudo apt-get install xboxdrv
 ## Configuring xboxdrv
 On your terminal type: evtest
 
-[Image]
+![evtest1](https://raw.githubusercontent.com/MatheusJBatista/emulating-xboxcontroller-linux/master/imgs/evtest1.png) \
 Then select your joypad.
 
-[image]
-After you select the joypad, when you press any button of you joypad, they will trigger and send you a message with buttonId
+![evtest2](https://raw.githubusercontent.com/MatheusJBatista/emulating-xboxcontroller-linux/master/imgs/evtest2.png) \
+After you select the joypad, when you press any button of you joypad, they will trigger and send you a message with buttonId 
 
-[Image]
+![evtest3](https://raw.githubusercontent.com/MatheusJBatista/emulating-xboxcontroller-linux/master/imgs/evtest3.png)
 
-Now you have to map your buttonId with xboxdrv buttonId, like this:
+Now you have to map your buttonId with xboxdrv buttonId, like this: \
 where joypadButtonId=xboxdrvButtonId
 
 --evdev-absmap<br>
@@ -60,17 +60,17 @@ xboxdrv \
 --evdev-keymap BTN_C=a,BTN_NORTH=x,BTN_SOUTH=y,BTN_EAST=b,BTN_Z=rb,BTN_TR=rt,BTN_WEST=lb,BTN_TL=lt,BTN_TR2=start,BTN_TL2=back,BTN_SELECT=tl,BTN_START=tr \
 --mimic-xpad --silent &
 
-now when you type "evtest" on your terminal, there is a new device
-[Image]
+now when you type "evtest" on your terminal, there is a new device \
+![evtest4](https://raw.githubusercontent.com/MatheusJBatista/emulating-xboxcontroller-linux/master/imgs/evtest4.png)
 
 ## Testing
 *the xbox controller can take some seconds to start working*.
 
-You can test through "evtest" selecting the xbox device and pressing any button.
-[Image]
+You can test through "evtest" selecting the xbox device and pressing any button. \
+![evtest5](https://raw.githubusercontent.com/MatheusJBatista/emulating-xboxcontroller-linux/master/imgs/evtest5.png)
 
-or via jstest selecting the new device on there.
-[Image]
+or via jstest selecting the new device on there. \
+![jtest2](https://raw.githubusercontent.com/MatheusJBatista/emulating-xboxcontroller-linux/master/imgs/jtest2.png)
 
 ## Reference
 https://steamcommunity.com/app/236090/discussions/0/558748653724279774/
